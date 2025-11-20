@@ -13,7 +13,7 @@ Superset plugin untuk menampilkan map sederhana dengan menggunakan `Open Layer`
 
 ### Contoh Data
 
-```json
+```csv
 nama,lon,lat,tipe,deskripsi,icon_url
 Lokasi 1,106.827153,-6.175392,Kantor,"Lokasi sample di Jakarta Pusat","https://your/point/icon"
 Lokasi 2,106.828200,-6.176100,Kantor,"Lokasi sample di Jakarta Pusat","https://your/icon.svg"
@@ -207,14 +207,13 @@ Untuk penggunaan build langsung code repository yang telah dibuat dapat mengikut
     
     
     
-  - Enabled CORS Talisman
+  - Enabled CORS
     
     edit the `superset/superset_config.py` and add configuration below:
     
     ```json
 ENABLE_CORS = True
     CORS_OPTIONS = {"origins": ["http://127.0.0.1:8088", "*"], "send_wildcard": True}
-# change origin with your application
     
     TALISMAN_ENABLED = False
     
@@ -249,5 +248,3 @@ ENABLE_CORS = True
             ],
         }
     ```
-
-### 
