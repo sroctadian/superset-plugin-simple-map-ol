@@ -212,7 +212,7 @@ Untuk penggunaan build langsung code repository yang telah dibuat dapat mengikut
     edit the `superset/superset_config.py` and add configuration below:
     
     ```json
-ENABLE_CORS = True
+    ENABLE_CORS = True
     CORS_OPTIONS = {"origins": ["http://127.0.0.1:8088", "*"], "send_wildcard": True}
     
     TALISMAN_ENABLED = False
